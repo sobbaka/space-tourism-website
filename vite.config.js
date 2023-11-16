@@ -3,7 +3,7 @@ import { resolve } from 'path'
 import handlebars from 'vite-plugin-handlebars'
 
 const outDir = resolve(__dirname, 'docs')
-const root = resolve(__dirname, 'src', 'html')
+const root = resolve(__dirname, 'src')
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,11 +19,11 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/html/index.html'),
-        destination: resolve(__dirname, 'src/html/destination.html'),
-        crew: resolve(__dirname, 'src/html/crew.html'),
-        technology: resolve(__dirname, 'src/html/technology.html'),
-      }
+        main: resolve(__dirname, 'src/index.html'),
+        destination: resolve(__dirname, 'src/destination.html'),
+        crew: resolve(__dirname, 'src/crew.html'),
+        technology: resolve(__dirname, 'src/technology.html'),
+      },
     }
   },
   plugins: [
