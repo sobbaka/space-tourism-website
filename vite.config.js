@@ -7,12 +7,14 @@ const root = resolve(__dirname, 'src')
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // publicDir: resolve(__dirname, 'src/images'),
   root: root,
   base: './',
   server: {
     watch: {
       usePolling: true
-    }
+    },
+    open: true
   },
   build: {
     outDir: outDir,
