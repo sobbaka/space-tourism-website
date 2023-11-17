@@ -1,0 +1,10 @@
+@use "../../../node_modules/sass-rem" as to;
+@import "./color.scss";
+@import "./webfonts.scss";
+@import "./base.scss";
+@import "./header.scss";
+@import "./homepage.scss";
+
+h1 {
+  font-size: to.rem(100px);
+}
