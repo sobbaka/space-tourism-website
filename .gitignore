@@ -27,4 +27,5 @@ docs
 /emmet
 *.md
 /docs
-/src/assets/
+/src/assets/images/
+/src/assets/fonts/
