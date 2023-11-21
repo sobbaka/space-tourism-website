@@ -22,4 +22,7 @@ a {
 
 p {
   color: $blue;
+  font-family: $Barlow;
+  font-size: to.rem(18px);
+  line-height: to.rem(32px);
 }
