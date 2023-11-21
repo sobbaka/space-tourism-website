@@ -1,35 +1,40 @@
 .homepage {
+  min-height: 100vh;
   background-image: url("../images/home/background-home-desktop.jpg");
   background-size: cover;
-  min-height: 100vh;
   overflow: hidden;
+
   &__main {
-    padding-top: to.rem(257px);
-    max-width: to.rem(1110px);
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    max-width: to.rem(1110px);
+    margin: 0 auto;
+    padding-top: to.rem(257px);
   }
+
   &__content {
     max-width: to.rem(450px);
   }
+
   &__heading {
     padding-bottom: to.rem(16px);
   }
+
   &__title {
     color: $white;
     font-family: $Bellefair;
     font-size: to.rem(150px);
     text-transform: uppercase;
   }
+
   &__subtitle {
-    color: $blue;
+    display: block;
+    padding-bottom: to.rem(20px);
     font-family: $Barlow-Cond;
     font-size: to.rem(28px);
+    color: $blue;
     letter-spacing: to.rem(4.725px);
-    display: block;
     text-transform: uppercase;
-    padding-bottom: to.rem(20px);
   }
 
   &__cta {
@@ -39,13 +44,13 @@
   &__link {
     position: absolute;
     right: to.rem(-88px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: to.rem(450px);
     height: to.rem(450px);
     border-radius: to.rem(450px);
     background-color: hsla(0, 0%, 100%, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   &__link:hover {
@@ -53,19 +58,19 @@
   }
 
   &__link-inner {
-    width: to.rem(274px);
-    height: to.rem(274px);
-    border-radius: to.rem(274px);
     display: flex;
     align-items: center;
     justify-content: center;
+    width: to.rem(274px);
+    height: to.rem(274px);
+    border-radius: to.rem(274px);
     background: $white;
   }
 
   &__link-text {
-    color: $black;
     font-family: $Bellefair;
     font-size: to.rem(32px);
+    color: $black;
     letter-spacing: to.rem(2px);
   }
 }
