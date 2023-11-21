@@ -32,9 +32,8 @@
     justify-content: flex-start;
     column-gap: to.rem(50px);
   }
-  &__item {
-  }
   &__link {
+    text-transform: uppercase;
     font-size: to.rem(16px);
     font-weight: 400;
     letter-spacing: to.rem(2.7px);
