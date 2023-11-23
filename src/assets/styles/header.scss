@@ -15,16 +15,16 @@
     height: to.rem(96px);
     width: 100%;
     padding-left: to.rem(123px);
-    max-width: to.rem(830px);
+    max-width: calc(835px + (100vw - 1500px) / 2);
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
   }
 
   &__navigation::before {
     position: absolute;
-    left: calc((100vw * 0.305 * -1));
-    width: calc(100vw * 0.328);
-    height: to.rem(3px);
+    left: to.rem(-458px);
+    width: to.rem(488px);
+    height: to.rem(1px);
     background-color: $grey;
     content: "";
   }

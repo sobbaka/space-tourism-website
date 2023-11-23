@@ -26,3 +26,8 @@ p {
   font-size: to.rem(18px);
   line-height: to.rem(32px);
 }
+
+.container {
+  max-width: to.rem(1110px);
+  margin: 0 auto;
+}
