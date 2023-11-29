@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  gap: to.rem(35px);
+  padding-top: to.rem(90px);
+}
+.tabs__items {
+  font-family: $Barlow-Cond;
+  font-size: to.rem(16px);
+  font-weight: 400;
+  letter-spacing: to.rem(2.7px);
+  cursor: pointer;
+}
+
+.tabs__items:hover,
+.tabs__items--active {
+  padding-bottom: to.rem(12px);
+  border-bottom: solid to.rem(3px) $white;
+}

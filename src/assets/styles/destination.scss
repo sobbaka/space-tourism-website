@@ -1,0 +1,85 @@
+.destination {
+  min-height: 100vh;
+  background-image: url("../images/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  overflow: hidden;
+
+  &__main {
+    padding-top: to.rem(76px);
+    display: flex;
+    gap: to.rem(157px);
+  }
+
+  &__planet {
+  }
+
+  &__title-main {
+    color: $white;
+    font-family: $Barlow-Cond;
+    font-size: to.rem(28px);
+    font-weight: 400;
+    letter-spacing: to.rem(4.725px);
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-weight: 700;
+    opacity: 0.25;
+  }
+  &__image {
+    max-width: to.rem(445px);
+    max-height: to.rem(445px);
+    padding: to.rem(97px 0 0 63px);
+  }
+
+  &__content {
+  }
+
+  &__tabs {
+  }
+
+  &__description {
+  }
+
+  &__title-planet {
+    padding: to.rem(57px 0 42px);
+    font-family: $Bellefair;
+    font-size: to.rem(100px);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    padding-bottom: to.rem(54px);
+    font-family: $Barlow;
+    font-size: to.rem(18px);
+    line-height: to.rem(32px);
+  }
+
+  &__info {
+    display: flex;
+    gap: to.rem(68px);
+    width: 100%;
+    padding-top: 28px;
+    border-top: 1px solid $black-l;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    padding-bottom: to.rem(12px);
+    color: $blue;
+    font-family: $Barlow-Cond;
+    font-size: to.rem(14px);
+    letter-spacing: to.rem(2.362px);
+    text-transform: uppercase;
+  }
+
+  &__value {
+    font-family: $Bellefair;
+    font-size: to.rem(28px);
+    text-transform: uppercase;
+  }
+}
