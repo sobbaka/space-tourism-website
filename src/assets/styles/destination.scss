@@ -26,10 +26,15 @@
     font-weight: 700;
     opacity: 0.25;
   }
+
+  &__image-wrapper {
+    padding: to.rem(97px 0 0 64px);
+  }
+
   &__image {
-    max-width: to.rem(445px);
-    max-height: to.rem(445px);
-    padding: to.rem(97px 0 0 63px);
+    width: to.rem(445px);
+    height: to.rem(445px);
+    max-inline-size: fit-content;
   }
 
   &__content {
@@ -42,14 +47,14 @@
   }
 
   &__title-planet {
-    padding: to.rem(57px 0 42px);
+    padding: to.rem(27px 0 10px);
     font-family: $Bellefair;
     font-size: to.rem(100px);
     text-transform: uppercase;
   }
 
   &__text {
-    padding-bottom: to.rem(54px);
+    padding-bottom: to.rem(49px);
     font-family: $Barlow;
     font-size: to.rem(18px);
     line-height: to.rem(32px);
