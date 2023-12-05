@@ -1,0 +1,15 @@
+.content {
+  &__title-main {
+    color: $white;
+    font-family: $Barlow-Cond;
+    font-size: to.rem(28px);
+    font-weight: 400;
+    letter-spacing: to.rem(4.725px);
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-weight: 700;
+    opacity: 0.25;
+  }
+}
