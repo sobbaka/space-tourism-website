@@ -5,12 +5,9 @@
   overflow: hidden;
 
   &__main {
-    padding-top: to.rem(76px);
+    padding: to.rem(76px 15px 0);
     display: flex;
     gap: to.rem(157px);
-  }
-
-  &__planet {
   }
 
   &__title-main {
@@ -35,15 +32,6 @@
     width: to.rem(445px);
     height: to.rem(445px);
     max-inline-size: fit-content;
-  }
-
-  &__content {
-  }
-
-  &__tabs {
-  }
-
-  &__description {
   }
 
   &__title-planet {
@@ -86,5 +74,65 @@
     font-family: $Bellefair;
     font-size: to.rem(28px);
     text-transform: uppercase;
+  }
+
+  @media (max-width: to.rem(1060px)) {
+    &__main {
+      gap: to.rem(110px);
+    }
+    &__image-wrapper {
+      padding: to.rem(97px 0 0 0);
+    }
+  }
+
+  @media (max-width: to.rem(920px)) {
+    &__main {
+      padding: to.rem(46px 15px 0);
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__image-wrapper {
+      text-align: center;
+      padding: to.rem(53px 0 0 0);
+    }
+
+    &__title-planet {
+      text-align: center;
+    }
+
+    &__text {
+      max-width: to.rem(580px);
+      text-align: center;
+    }
+
+    &__info {
+      max-width: to.rem(580px);
+      justify-content: center;
+      gap: to.rem(120px);
+      padding-bottom: to.rem(60px);
+    }
+
+    &__item {
+      align-items: center;
+    }
+
+    &__image {
+      width: to.rem(300px);
+      height: to.rem(300px);
+    }
+  }
+
+  @media (max-width: to.rem(920px)) {
+    &__info {
+      flex-direction: column;
+      gap: to.rem(32px);
+    }
   }
 }
