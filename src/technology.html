@@ -17,11 +17,20 @@
   <meta property="og:image" content="">
 
   <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
 
-  <script type="module" src="./js/main.js"></script>
+  <div class="tech">
+    {{> header }}
+    <div class="container">
+      {{> technologyContent}}
+    </div>
+  </div>
+
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 
 </html>
