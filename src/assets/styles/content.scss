@@ -7,9 +7,25 @@
     letter-spacing: to.rem(4.725px);
     text-transform: uppercase;
   }
-
   &__number {
     font-weight: 700;
     opacity: 0.25;
+  }
+  &__subtitle {
+    color: $blue;
+    font-family: $Barlow-Cond;
+    font-size: to.rem(16px);
+    letter-spacing: to.rem(2.7px);
+  }
+  &__title {
+    color: $white;
+    font-family: $Bellefair;
+    font-size: to.rem(56px);
+  }
+  &__text {
+    color: $blue;
+    font-family: $Barlow;
+    font-size: to.rem(18px);
+    line-height: to.rem(32px);
   }
 }
