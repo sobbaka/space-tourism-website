@@ -71,4 +71,95 @@
     color: $black;
     letter-spacing: to.rem(2px);
   }
+
+  @media (max-width: to.rem(1100px)) {
+    &__main {
+      padding: to.rem(257px 15px 0);
+    }
+  }
+
+  @media (max-width: to.rem(950px)) {
+    &__main {
+      padding: to.rem(106px 15px 0);
+    }
+  }
+
+  @media (max-width: to.rem(768px)) {
+    background-image: url("../images/home/background-home-tablet.jpg");
+
+    &__main {
+      // padding: to.rem(106px 15px 0);
+      flex-direction: column;
+      align-items: center;
+      gap: to.rem(156px);
+      overflow: visible;
+      overflow-x: hidden;
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: to.rem(20px);
+    }
+
+    &__description {
+      text-align: center;
+    }
+
+    &__link-inner {
+      width: to.rem(242px);
+      height: to.rem(242px);
+    }
+
+    &__link {
+      position: static;
+      width: to.rem(242px);
+      height: to.rem(242px);
+      border-radius: to.rem(274px);
+      background: $white;
+    }
+
+    &__link:hover {
+      background: $white;
+    }
+  }
+
+  @media (max-width: to.rem(480px)) {
+    background-image: url("../images/home/background-home-mobile.jpg");
+
+    &__main {
+      padding: to.rem(48px 15px 0);
+      gap: to.rem(81px);
+    }
+
+    &__heading {
+      text-align: center;
+    }
+    &__subtitle {
+      font-size: to.rem(16px);
+    }
+    &__title {
+      font-size: to.rem(80px);
+      text-align: center;
+    }
+
+    &__description {
+      font-size: to.rem(15px);
+    }
+
+    &__link-inner {
+      width: to.rem(150px);
+      height: to.rem(150px);
+    }
+
+    &__link {
+      width: to.rem(150px);
+      height: to.rem(150px);
+      border-radius: to.rem(274px);
+      background: $white;
+    }
+
+    &__link:hover {
+      background: $white;
+    }
+  }
 }
