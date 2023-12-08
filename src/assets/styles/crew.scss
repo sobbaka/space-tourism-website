@@ -1,3 +1,33 @@
 .crew {
   min-height: 100vh;
+
+  &__title-main {
+    padding-top: to.rem(76px);
+  }
+
+  @media (max-width: to.rem(1100px)) {
+    overflow-x: hidden;
+
+    &__title-main {
+      padding-left: to.rem(38.5px);
+    }
+  }
+
+  @media (max-width: to.rem(880px)) {
+    overflow-x: hidden;
+
+    &__title-main {
+      padding-left: to.rem(38.5px);
+      text-align: center;
+    }
+  }
+
+  @media (max-width: to.rem(560px)) {
+    padding-bottom: to.rem(104px);
+
+    &__title-main {
+      padding: to.rem(24px 0 0 0);
+      text-align: center;
+    }
+  }
 }

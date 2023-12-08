@@ -1,0 +1,13 @@
+.swiper {
+  &__subtitle {
+    color: $blue;
+    font-family: $Barlow-Cond;
+    font-size: to.rem(16px);
+    letter-spacing: to.rem(2.7px);
+  }
+  &__title {
+    color: $white;
+    font-family: $Bellefair;
+    font-size: to.rem(56px);
+  }
+}
