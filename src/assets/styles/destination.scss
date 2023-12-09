@@ -10,14 +10,14 @@
     gap: to.rem(157px);
   }
 
-  &__title-main {
-    color: $white;
-    font-family: $Barlow-Cond;
-    font-size: to.rem(28px);
-    font-weight: 400;
-    letter-spacing: to.rem(4.725px);
-    text-transform: uppercase;
-  }
+  // &__title-main {
+  //   color: $white;
+  //   font-family: $Barlow-Cond;
+  //   font-size: to.rem(28px);
+  //   font-weight: 400;
+  //   letter-spacing: to.rem(4.725px);
+  //   text-transform: uppercase;
+  // }
 
   &__number {
     font-weight: 700;
@@ -133,6 +133,12 @@
     &__info {
       flex-direction: column;
       gap: to.rem(32px);
+    }
+  }
+
+  @media (max-width: to.rem(560px)) {
+    &__title-main {
+      text-align: center;
     }
   }
 }

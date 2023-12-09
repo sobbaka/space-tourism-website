@@ -31,6 +31,21 @@
   </div>
 
   <script type="module" src="./assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="tech__pagination-item ' + className + ' ">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>
