@@ -1,20 +1,25 @@
-const slide = document.querySelector('.crew-swiper__slide')
 const slider = document.querySelector('.crew-swiper__wrapper')
 let crew = []
 
-function addContent(data, slide) {
-  const newSlide = slide.cloneNode(true)
-  const name = newSlide.querySelector('.crew-swiper__title')
-  const role = newSlide.querySelector('.crew-swiper__subtitle')
-  const image = newSlide.querySelector('.crew-swiper__image')
-  const bio = newSlide.querySelector('.crew-swiper__text')
+function addContent(data) {
+  const html = `
+    <div class="swiper-slide crew-swiper__slide display-none">
+      <div class="crew-swiper__content">
+        <div class="crew-swiper__member">
+          <h3 class="crew-swiper__subtitle">${data.role}</h3>
+          <h2 class="crew-swiper__title">${data.name}</h2>
+          <p class="destination__text crew-swiper__text">
+          ${data.bio}
+          </p>
+        </div>
+      </div>
+      <div class="crew-swiper__picture">
+        <img src="../../assets/images/${data.images.webp}" alt="${data.name}" class="crew-swiper__image">
+      </div>
+    </div>
+    `
 
-  image.src = `../../assets/images/${data.images.webp}`
-  name.innerHTML = data.name
-  role.innerHTML = data.role
-  bio.innerHTML = data.bio
-
-  return newSlide
+  return html
 }
 
 async function loadCrew() {
@@ -35,7 +40,7 @@ window.addEventListener("DOMContentLoaded", async (event) => {
   crew = await loadCrew()
   slider.innerHTML = ''
   crew.forEach((member) => {
-    const node = addContent(member, slide)
-    slider.append(node)
+    const node = addContent(member)
+    slider.insertAdjacentHTML("beforeend", node)
   })
 });
