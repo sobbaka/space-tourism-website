@@ -1,5 +1,7 @@
 .crew {
   min-height: 100vh;
+  background-image: url("../images/crew/background-crew-desktop.jpg");
+  background-size: cover;
 
   &__title-main {
     padding-top: to.rem(76px);
@@ -14,6 +16,8 @@
   }
 
   @media (max-width: to.rem(920px)) {
+    background-image: url("../images/crew/background-crew-tablet.jpg");
+
     &__title-main {
       padding: to.rem(40px 0 0);
       font-size: to.rem(20px);
@@ -22,6 +26,7 @@
 
   @media (max-width: to.rem(620px)) {
     padding-bottom: to.rem(0);
+    background-image: url("../images/crew/background-crew-mobile.jpg");
 
     &__title-main {
       font-size: to.rem(16px);
