@@ -8,7 +8,7 @@ function addContent(data) {
         <div class="crew-swiper__member">
           <h3 class="crew-swiper__subtitle">${data.role}</h3>
           <h2 class="crew-swiper__title">${data.name}</h2>
-          <p class="destination__text crew-swiper__text">
+          <p class="crew-swiper__text">
           ${data.bio}
           </p>
         </div>
