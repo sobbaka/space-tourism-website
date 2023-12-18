@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==" sizes="any">
+  <link rel="icon" href="./assets/logo-36f54b1a.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+
+  <title>Destinations | Space tourism & Frontend Mentor</title>
+  <meta name="description" content="">
+
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="stylesheet" href="#">
+  <script type="module" crossorigin src="./assets/destination-32aa87cb.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/main-bc5e3e1b.js">
+  <link rel="stylesheet" href="./assets/main-20f408e1.css">
+</head>
+
+<body>
+  <div class="destination">
+    <header class="header">
+      <a href="/" class="header__logo logo">
+        <img src="./assets/logo-36f54b1a.svg" alt="Logo" class="logo__image">
+      </a>
+    
+      <div class="header__burger burger">
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="/" class="header__link header__link--active"><span class="header__link-number">00</span> Home</a>
+          </li>
+          <li class="header__item"><a href="../../destination.html" class="header__link">
+              <span class="header__link-number">01</span> Destination</a>
+          </li>
+          <li class="header__item"><a href="../../crew.html" class="header__link">
+              <span class="header__link-number">02</span> Crew</a>
+          </li>
+          <li class="header__item"><a href="../../technology.html" class="header__link">
+              <span class="header__link-number">03</span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </header>    <div class="container">
+      <main class="destination__main">
+        <div class="destination__planet">
+          <h1 class="content__title-main destination__title-main">
+            <span class="content__number">01</span>
+            Pick your destination
+          </h1>
+          <div class="destination__image-wrapper">
+            <img src="../../assets/images/destination/image-moon.webp" alt="" class="destination__image">
+      
+          </div>
+        </div>
+      
+        <div class="destination__content">
+          <ul class="tabs destination__tabs">
+            <li class="tabs__items tabs__items--active">
+              MOON
+            </li>
+            <li class="tabs__items">
+              MARS
+            </li>
+            <li class="tabs__items">
+              EUROPA
+            </li>
+            <li class="tabs__items">
+              TITAN
+            </li>
+          </ul>
+          <div class="destination__description">
+            <h2 class="destination__title-planet">Moon</h2>
+            <p class="destination__text">
+              See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come
+              back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+          </div>
+          <div class="destination__info">
+            <div class="destination__item">
+              <span class="destination__subtitle">
+                AVG. DISTANCE
+              </span>
+              <span class="destination__value destination__distance">
+                384,400 km
+              </span>
+            </div>
+            <div class="destination__item">
+              <span class="destination__subtitle">
+                Est. travel time
+              </span>
+              <span class="destination__value destination__travel">
+                3 days
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      </main>    </div>
+  </div>
+  
+  
+</body>
+
+</html>
