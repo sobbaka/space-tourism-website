@@ -61,6 +61,10 @@
   }
 
   @media (max-width: to.rem(1110px)) {
+    &__container {
+      padding: to.rem(0);
+    }
+
     &__wrapper {
       padding-left: to.rem(24px);
     }
