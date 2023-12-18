@@ -1,6 +1,8 @@
 .tech {
   overflow: hidden;
   min-height: to.rem(900px);
+  background-image: url("../images/technology/background-technology-desktop.jpg");
+  background-size: cover;
 
   &__wrapper {
     display: flex;
@@ -64,6 +66,8 @@
     }
   }
   @media (max-width: to.rem(980px)) {
+    background-image: url("../images/technology/background-technology-tablet.jpg");
+
     &__container {
       width: 100%;
       padding-bottom: to.rem(100px);
@@ -136,6 +140,8 @@
   }
 
   @media (max-width: to.rem(500px)) {
+    background-image: url("../images/technology/background-technology-mobile.jpg");
+
     &__columns {
       gap: to.rem(100px);
     }
