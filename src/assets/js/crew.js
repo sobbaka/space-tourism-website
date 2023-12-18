@@ -3,7 +3,7 @@ let crew = []
 
 function addContent(data) {
   const html = `
-    <div class="swiper-slide crew-swiper__slide display-none">
+    <div class="swiper-slide crew-swiper__slide">
       <div class="crew-swiper__content">
         <div class="crew-swiper__member">
           <h3 class="crew-swiper__subtitle">${data.role}</h3>
@@ -18,7 +18,6 @@ function addContent(data) {
       </div>
     </div>
     `
-
   return html
 }
 

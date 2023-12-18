@@ -13,19 +13,18 @@
     }
   }
 
-  @media (max-width: to.rem(880px)) {
-    overflow-x: hidden;
-
+  @media (max-width: to.rem(920px)) {
     &__title-main {
-      padding-left: to.rem(38.5px);
-      text-align: center;
+      padding: to.rem(40px 0 0);
+      font-size: to.rem(20px);
     }
   }
 
-  @media (max-width: to.rem(560px)) {
-    padding-bottom: to.rem(104px);
+  @media (max-width: to.rem(620px)) {
+    padding-bottom: to.rem(0);
 
     &__title-main {
+      font-size: to.rem(16px);
       padding: to.rem(24px 0 0 0);
       text-align: center;
     }

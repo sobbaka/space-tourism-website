@@ -30,6 +30,13 @@ p {
 .container {
   max-width: to.rem(1110px);
   margin: 0 auto;
+
+  @media (max-width: to.rem(920px)) {
+    padding: to.rem(0 39px);
+  }
+  @media (max-width: to.rem(620px)) {
+    padding: to.rem(0 24px);
+  }
 }
 
 .display-none {
