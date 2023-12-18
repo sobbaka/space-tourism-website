@@ -70,6 +70,7 @@
     }
   }
   @media (max-width: to.rem(980px)) {
+    min-height: auto;
     background-image: url("../images/technology/background-technology-tablet.jpg");
 
     &__container {
@@ -159,6 +160,15 @@
 
     &__subtitle {
       font-size: to.rem(14px);
+    }
+  }
+
+  @media (max-width: to.rem(360px)) {
+    &__container {
+      padding-bottom: 0;
+    }
+    &__description {
+      padding: to.rem(25px 0 60px);
     }
   }
 }
