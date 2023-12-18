@@ -64,6 +64,12 @@
     }
   }
 
+  @media (max-width: to.rem(1100px)) {
+    &__logo {
+      padding-left: to.rem(39px);
+    }
+  }
+
   @media (max-width: to.rem(1000px)) {
     &__list {
       column-gap: to.rem(37px);

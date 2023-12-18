@@ -4,36 +4,28 @@
   font-family: "Barlow Regular";
   font-weight: 400;
   font-style: normal;
-  src:
-    local("Bellefair"),
-    url("../fonts/Barlow-Regular.ttf") format("ttf");
+  src: local("Bellefair"), url("../fonts/Barlow-Regular.ttf");
   font-display: swap;
 }
 @font-face {
   font-family: "Bellefair";
   font-weight: 400;
   font-style: normal;
-  src:
-    local("Bellefair"),
-    url("../fonts/Bellefair-Regular.ttf") format("ttf");
+  src: local("Bellefair"), url("../fonts/Bellefair-Regular.ttf");
   font-display: swap;
 }
 @font-face {
   font-family: "Barlow Condensed";
   font-weight: 400;
   font-style: normal;
-  src:
-    local("Barlow Condensed"),
-    url("../fonts/BarlowCondensed-Regular.ttf") format("ttf");
+  src: local("Barlow Condensed"), url("../fonts/BarlowCondensed-Regular.ttf");
   font-display: swap;
 }
 @font-face {
   font-family: "Barlow Condensed";
   font-weight: 700;
   font-style: normal;
-  src:
-    local("Barlow Condensed"),
-    url("../fonts/BarlowCondensed-Bold.ttf") format("ttf");
+  src: local("Barlow Condensed"), url("../fonts/BarlowCondensed-Bold.ttf");
   font-display: swap;
 }
 

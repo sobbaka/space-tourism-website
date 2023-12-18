@@ -74,7 +74,7 @@
 
   @media (max-width: to.rem(1100px)) {
     &__main {
-      padding: to.rem(257px 15px 0);
+      padding: to.rem(257px 39px 0);
     }
   }
 
@@ -84,7 +84,7 @@
     }
   }
 
-  @media (max-width: to.rem(768px)) {
+  @media (max-width: to.rem(820px)) {
     background-image: url("../images/home/background-home-tablet.jpg");
 
     &__main {
@@ -103,6 +103,10 @@
 
     &__description {
       text-align: center;
+    }
+
+    &__cta {
+      padding-bottom: to.rem(32px);
     }
 
     &__link-inner {
