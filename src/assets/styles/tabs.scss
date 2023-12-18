@@ -21,4 +21,10 @@
     padding-top: to.rem(53px);
     justify-content: center;
   }
+
+  @media (max-width: to.rem(560px)) {
+    &__items {
+      font-size: to.rem(14px);
+    }
+  }
 }
