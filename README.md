@@ -1,7 +1,7 @@
 # Space tourism website
 
-![Design preview for the Space tourism website coding challenge](https://www.figma.com/file/3Ik0wnnAVJKSfsZXfC3J7n/space-tourism-website?mode=dev)
-![Website on Github pages](https://sobbaka.github.io/space-tourism-website/)
+[Design preview for the Space tourism website coding challenge](https://www.figma.com/file/3Ik0wnnAVJKSfsZXfC3J7n/space-tourism-website?mode=dev)
+[Website on Github pages](https://sobbaka.github.io/space-tourism-website/)
 
 ## Technologies Used
 
