@@ -1,4 +1,4 @@
-import"./main-bc5e3e1b.js";const c=document.querySelector(".swiper-wrapper");let n=[];function o(e){return`
+import"./main-eb8f4015.js";const c=document.querySelector(".swiper-wrapper");let n=[];function o(e){return`
   <div class="swiper-slide">
   <div class="tech__columns">
     <div class="tech__column tech__description">
