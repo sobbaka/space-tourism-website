@@ -15,4 +15,4 @@ import"./main-bc5e3e1b.js";const c=document.querySelector(".swiper-wrapper");let
     </div>
   </div>
 </div>
-    `}async function i(){try{const e=await fetch("/data.json");if(!e.ok)throw new Error("something is broken");return(await e.json()).technology}catch(e){console.log(e)}}window.addEventListener("DOMContentLoaded",async e=>{n=await i(),c.innerHTML="",n.forEach(t=>{const s=o(t);c.insertAdjacentHTML("beforeend",s)})});
+    `}async function i(){try{const e=await fetch("./data.json");if(!e.ok)throw new Error("something is broken");return(await e.json()).technology}catch(e){console.log(e)}}window.addEventListener("DOMContentLoaded",async e=>{n=await i(),c.innerHTML="",n.forEach(t=>{const s=o(t);c.insertAdjacentHTML("beforeend",s)})});

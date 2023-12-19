@@ -25,7 +25,7 @@ function addContent(data) {
 
 async function loadTechnology() {
   try {
-    const response = await fetch('/data.json')
+    const response = await fetch('./data.json')
     if (!response.ok) throw new Error('something is broken')
     const data = await response.json()
     return data.technology
