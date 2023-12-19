@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 .editorconfig
 /emmet
-*.md
+README-template.md
