@@ -46,8 +46,12 @@
 
   &__link--active,
   &__link:hover {
-    padding-bottom: to.rem(37px);
-    border-bottom: to.rem(3px) solid #fff;
+    padding-bottom: to.rem(34px);
+    border-bottom: to.rem(3px) solid hsla(0, 0%, 100%, 0.5);
+  }
+
+  &__link--active {
+    border-bottom: to.rem(3px) solid hsla(0, 0%, 100%, 1);
   }
 
   &__link-number {
