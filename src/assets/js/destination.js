@@ -35,9 +35,10 @@ async function loadPlanets() {
   }
 }
 
-window.addEventListener("load", async (event) => {
+window.addEventListener("DOMContentLoaded", async (event) => {
   planets = await loadPlanets()
   renderTabs(planets)
+  addContent(planets[0])
   tabs.querySelectorAll('.tabs__items').forEach((tab) => {
     tab.addEventListener('click', (e) => {
       tabs.querySelector('.tabs__items--active').classList.remove('tabs__items--active')
