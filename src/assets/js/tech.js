@@ -13,8 +13,8 @@ function addContent(data) {
     <div class="tech__column tech__picture">
       <picture>
         <source media="(max-width: 980px)"
-          srcset="../../assets/images${data.images.landscape}" />
-        <img src="../../assets/images${data.images.portrait}" alt="${data.name}" class="tech__image">
+          srcset="${data.images.landscape}" />
+        <img src="${data.images.portrait}" alt="${data.name}" class="tech__image">
       </picture>
     </div>
   </div>
@@ -25,7 +25,7 @@ function addContent(data) {
 
 async function loadTechnology() {
   try {
-    const response = await fetch('./assets/js/data.json')
+    const response = await fetch('/data.json')
     if (!response.ok) throw new Error('something is broken')
     const data = await response.json()
     return data.technology

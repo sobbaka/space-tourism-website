@@ -13,8 +13,8 @@ import"./main-bc5e3e1b.js";function He(s){return s!==null&&typeof s=="object"&&"
       </p>
     </div>
     <div class="crew-swiper__picture">
-      <img src="../../assets/images/${s.images.webp}" alt="${s.name}" class="crew-swiper__image">
+      <img src="${s.images.webp}" alt="${s.name}" class="crew-swiper__image">
     </div>
   </div>
 </div>
-    `}async function Ns(){try{const s=await fetch("./assets/js/data.json");if(!s.ok)throw new Error("something is broken");const e=await s.json();if(e.Response==="False")throw new Error("Movie not found");return e.crew}catch(s){s.name!=="AbortError"&&console.log(s)}}window.addEventListener("DOMContentLoaded",async s=>{Ve=await Ns(),Ne.innerHTML="",Ve.forEach(e=>{const t=Ys(e);Ne.insertAdjacentHTML("beforeend",t)}),new _(".crew-swiper",{pagination:{el:".swiper-pagination",clickable:!0,renderBullet:function(e,t){return'<span class="crew-swiper__pagination-item '+t+' "></span>'}}})});
+    `}async function Ns(){try{const s=await fetch("/data.json");if(!s.ok)throw new Error("something is broken");const e=await s.json();if(e.Response==="False")throw new Error("Movie not found");return e.crew}catch(s){s.name!=="AbortError"&&console.log(s)}}window.addEventListener("DOMContentLoaded",async s=>{Ve=await Ns(),Ne.innerHTML="",Ve.forEach(e=>{const t=Ys(e);Ne.insertAdjacentHTML("beforeend",t)}),new _(".crew-swiper",{pagination:{el:".swiper-pagination",clickable:!0,renderBullet:function(e,t){return'<span class="crew-swiper__pagination-item '+t+' "></span>'}}})});

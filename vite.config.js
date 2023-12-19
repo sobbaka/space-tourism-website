@@ -4,12 +4,14 @@ import handlebars from 'vite-plugin-handlebars'
 
 const outDir = resolve(__dirname, 'docs')
 const root = resolve(__dirname, 'src')
+const publicFolder = resolve(__dirname, 'public')
 
 // https://vitejs.dev/config/
 export default defineConfig({
   // publicDir: resolve(__dirname, 'src/images'),
   root: root,
   base: './',
+  publicDir: publicFolder,
   server: {
     watch: {
       usePolling: true

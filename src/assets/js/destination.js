@@ -14,7 +14,7 @@ function renderTabs(data) {
 }
 
 function addContent(data) {
-  image.src = `../../assets/images/${data.images.webp}`
+  image.src = `${data.images.webp}`
   namePlanet.innerHTML = data.name
   description.innerHTML = data.description
   distance.innerHTML = data.distance
@@ -23,7 +23,7 @@ function addContent(data) {
 
 async function loadPlanets() {
   try {
-    const response = await fetch('./assets/js/data.json')
+    const response = await fetch('/data.json')
     if (!response.ok) throw new Error('something is broken')
     const data = await response.json()
     if (data.Response === 'False') throw new Error('Movie not found')

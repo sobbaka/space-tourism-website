@@ -20,7 +20,7 @@ function addContent(data) {
       </p>
     </div>
     <div class="crew-swiper__picture">
-      <img src="../../assets/images/${data.images.webp}" alt="${data.name}" class="crew-swiper__image">
+      <img src="${data.images.webp}" alt="${data.name}" class="crew-swiper__image">
     </div>
   </div>
 </div>
@@ -30,7 +30,7 @@ function addContent(data) {
 
 async function loadCrew() {
   try {
-    const response = await fetch('./assets/js/data.json')
+    const response = await fetch('/data.json')
     if (!response.ok) throw new Error('something is broken')
     const data = await response.json()
     if (data.Response === 'False') throw new Error('Movie not found')
