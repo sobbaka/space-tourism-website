@@ -47,10 +47,12 @@
   }
 
   &__title {
-    padding-bottom: to.rem(36px);
+    padding: to.rem(10px 0 17px);
+    text-transform: uppercase;
   }
   &__picture {
-    min-width: to.rem(460px);
+    min-width: to.rem(515px);
+    padding-top: to.rem(27px);
   }
   &__image {
     min-width: to.rem(460px);
