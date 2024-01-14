@@ -26,7 +26,7 @@
     opacity: 0.5;
   }
   &__title {
-    padding: to.rem(15px 0 42px);
+    padding: to.rem(15px 0 25px);
     font-family: $Bellefair;
     font-size: to.rem(100px);
     text-transform: uppercase;
@@ -145,7 +145,7 @@
 .crew-swiper__pagination {
   text-align: left;
   padding-bottom: 0 !important;
-  top: 520px !important;
+  top: 545px !important;
 
   @media (max-width: to.rem(1100px)) {
     left: 35px !important;
@@ -170,6 +170,7 @@
   width: to.rem(15px);
   height: to.rem(15px);
   background-color: #979797;
+  margin-right: to.rem(20px) !important;
 
   @media (max-width: to.rem(920px)) {
     width: to.rem(10px);
