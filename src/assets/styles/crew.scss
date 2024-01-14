@@ -25,6 +25,7 @@
     &__title-main {
       padding: to.rem(40px 0 0);
       font-size: to.rem(20px);
+      letter-spacing: 3.375px;
     }
   }
 
@@ -34,8 +35,13 @@
 
     &__title-main {
       font-size: to.rem(16px);
-      padding: to.rem(24px 0 0 0);
+      padding: to.rem(21px 0 0 0);
       text-align: center;
+    }
+
+    &__picture {
+      height: to.rem(255px);
+      padding-left: to.rem(15px);
     }
   }
 }
