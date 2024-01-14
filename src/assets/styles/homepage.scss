@@ -7,7 +7,7 @@
   &__main {
     display: flex;
     justify-content: space-between;
-    padding-top: to.rem(257px);
+    padding-top: to.rem(251px);
   }
 
   &__content {
@@ -15,7 +15,7 @@
   }
 
   &__heading {
-    padding-bottom: to.rem(16px);
+    padding-bottom: to.rem(24px);
   }
 
   &__title {
@@ -27,7 +27,7 @@
 
   &__subtitle {
     display: block;
-    padding-bottom: to.rem(20px);
+    padding-bottom: to.rem(24px);
     font-family: $Barlow-Cond;
     font-size: to.rem(28px);
     color: $blue;
@@ -42,6 +42,7 @@
   &__link {
     position: absolute;
     right: to.rem(-88px);
+    margin-top: to.rem(20px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +71,7 @@
     font-size: to.rem(32px);
     color: $black;
     letter-spacing: to.rem(2px);
+    text-transform: uppercase;
   }
 
   @media (max-width: to.rem(1100px)) {
