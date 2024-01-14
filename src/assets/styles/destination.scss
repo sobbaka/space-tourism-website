@@ -5,9 +5,9 @@
   overflow: hidden;
 
   &__main {
-    padding: to.rem(76px 15px 0);
+    padding: to.rem(76px 0 0);
     display: flex;
-    gap: to.rem(157px);
+    gap: to.rem(158px);
   }
 
   // &__title-main {
@@ -17,6 +17,11 @@
   //   font-weight: 400;
   //   letter-spacing: to.rem(4.725px);
   //   text-transform: uppercase;
+  // }
+
+  // .container__dest {
+  //   width: to.rem(1120px);
+  //   max-width: 1120px;
   // }
 
   &__number {
@@ -35,14 +40,14 @@
   }
 
   &__title-planet {
-    padding: to.rem(27px 0 10px);
+    padding: to.rem(37px 0 14px);
     font-family: $Bellefair;
     font-size: to.rem(100px);
     text-transform: uppercase;
   }
 
   &__text {
-    padding-bottom: to.rem(49px);
+    padding-bottom: to.rem(54px);
     font-family: $Barlow;
     font-size: to.rem(18px);
     line-height: to.rem(32px);
@@ -50,7 +55,7 @@
 
   &__info {
     display: flex;
-    gap: to.rem(68px);
+    gap: to.rem(80px);
     width: 100%;
     padding-top: 28px;
     border-top: 1px solid $black-l;

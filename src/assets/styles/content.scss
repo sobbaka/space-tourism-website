@@ -8,6 +8,7 @@
     text-transform: uppercase;
   }
   &__number {
+    padding-right: to.rem(15px);
     font-weight: 700;
     opacity: 0.25;
   }
