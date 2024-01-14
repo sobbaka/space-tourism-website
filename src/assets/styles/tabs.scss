@@ -22,9 +22,21 @@
     justify-content: center;
   }
 
+  @media (max-width: to.rem(768px)) {
+    padding-top: to.rem(40px);
+  }
+
   @media (max-width: to.rem(560px)) {
+    padding-top: to.rem(11px);
+    gap: to.rem(23px);
+
     &__items {
       font-size: to.rem(14px);
+    }
+
+    &__items:hover,
+    &__items--active {
+      padding-bottom: to.rem(8px);
     }
   }
 }

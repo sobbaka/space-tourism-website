@@ -30,4 +30,22 @@
     line-height: to.rem(32px);
     max-width: to.rem(444px);
   }
+
+  @media (max-width: to.rem(768px)) {
+    &__title-main {
+      font-size: to.rem(20px);
+      letter-spacing: 3.375px;
+    }
+
+    &__number {
+      padding-right: to.rem(9px);
+    }
+  }
+
+  @media (max-width: to.rem(768px)) {
+    &__title-main {
+      font-size: to.rem(16px);
+      letter-spacing: to.rem(2.7px);
+    }
+  }
 }
