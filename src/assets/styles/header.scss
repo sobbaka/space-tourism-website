@@ -91,6 +91,14 @@
     }
   }
 
+  @media (max-width: to.rem(768px)) {
+    padding-top: 0;
+
+    &__navigation {
+      max-width: calc(815px + (100vw - 1500px) / 2);
+    }
+  }
+
   @media (max-width: to.rem(670px)) {
     position: relative;
 
@@ -130,7 +138,12 @@
     }
 
     &__logo {
-      padding-left: to.rem(26px);
+      padding: to.rem(24px 0 0 25px);
+    }
+
+    &__logo-image {
+      width: to.rem(40px);
+      height: to.rem(40px);
     }
   }
 }
@@ -138,11 +151,11 @@
 @media (max-width: to.rem(670px)) {
   .hamburger-lines {
     display: block;
-    height: 26px;
-    width: 32px;
+    height: 20px;
+    width: 22px;
     position: absolute;
-    top: 46px;
-    right: 26px;
+    top: 34px;
+    right: 25px;
     z-index: 10000;
     display: flex;
     flex-direction: column;
@@ -151,7 +164,7 @@
 
   .hamburger-lines .line {
     display: block;
-    height: 4px;
+    height: 2px;
     width: 100%;
     border-radius: 10px;
     background: $white;

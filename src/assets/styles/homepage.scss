@@ -99,12 +99,22 @@
     }
 
     &__subtitle {
+      padding-bottom: to.rem(14px);
       text-align: center;
       font-size: to.rem(20px);
+      font-size: 20px;
+      letter-spacing: to.rem(3.375px);
+    }
+
+    &__heading {
+      padding-bottom: to.rem(12px);
     }
 
     &__description {
       text-align: center;
+      max-width: to.rem(444px);
+      font-size: to.rem(16px);
+      line-height: to.rem(28px);
     }
 
     &__cta {
@@ -117,6 +127,7 @@
     }
 
     &__link {
+      margin-top: 0;
       position: static;
       width: to.rem(242px);
       height: to.rem(242px);
@@ -133,15 +144,18 @@
     background-image: url("../images/home/background-home-mobile.jpg");
 
     &__main {
-      padding: to.rem(48px 15px 0);
+      padding: to.rem(45px 15px 0);
       gap: to.rem(81px);
     }
 
     &__heading {
       text-align: center;
+      padding-bottom: to.rem(21px);
     }
     &__subtitle {
       font-size: to.rem(16px);
+      letter-spacing: to.rem(2.7px);
+      padding-bottom: to.rem(21px);
     }
     &__title {
       font-size: to.rem(80px);
@@ -150,6 +164,8 @@
 
     &__description {
       font-size: to.rem(15px);
+      line-height: to.rem(25px);
+      width: to.rem(327px);
     }
 
     &__link-inner {
@@ -166,6 +182,11 @@
 
     &__link:hover {
       background: $white;
+    }
+
+    &__link-text {
+      font-size: to.rem(20px);
+      margin: to.rem(7px -6px 0 0);
     }
   }
 }
