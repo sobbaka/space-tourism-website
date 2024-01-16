@@ -17,11 +17,12 @@ function addContent(data) {
   const html = `
 <div class="swiper-slide crew__slide">
 <div class="crew__slide-wrapper" style="min-height: ${slideHeight}">
+<div class="crew__content-wrapper">
       <h2 class="crew__title"><span class="crew__subtitle">${data.role}</span><br>${data.name}</h2>
       <p class="crew__description">
       ${data.bio}
       </p>
-
+      </div>
       <img src="${data.images.webp}" alt="${data.name}" class="crew-swiper__image crew__image">
       </div>
 </div>
