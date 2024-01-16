@@ -1,47 +1,84 @@
 .crew {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  background-image: url("../images/crew/background-crew-desktop.jpg");
-  background-size: cover;
 
-  &__text {
-    max-width: to.rem(444px);
+  &__container {
+    width: 100%;
+    flex: 1;
+  }
+
+  &__wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: to.rem(76px);
+    height: 100%;
   }
 
   &__title-main {
-    padding-top: to.rem(76px);
   }
 
-  @media (max-width: to.rem(1100px)) {
-    overflow-x: hidden;
-
-    &__title-main {
-      padding-left: to.rem(38.5px);
-    }
+  &__title {
+    font-family: Bellefair;
+    font-size: to.rem(56px);
+    text-transform: uppercase;
   }
 
-  @media (max-width: to.rem(920px)) {
-    background-image: url("../images/crew/background-crew-tablet.jpg");
-
-    &__title-main {
-      padding: to.rem(40px 0 0);
-      font-size: to.rem(20px);
-      letter-spacing: 3.375px;
-    }
+  &__subtitle {
+    font-size: to.rem(32px);
+    opacity: 0.5042;
+    padding-bottom: to.rem(14px);
+    display: inline-block;
   }
 
-  @media (max-width: to.rem(620px)) {
-    padding-bottom: to.rem(0);
-    background-image: url("../images/crew/background-crew-mobile.jpg");
+  &__description {
+    width: to.rem(444px);
+    line-height: to.rem(32px);
+    padding-top: to.rem(26px);
+  }
 
-    &__title-main {
-      font-size: to.rem(16px);
-      padding: to.rem(21px 0 0 0);
-      text-align: center;
-    }
+  &__swiper {
+  }
 
-    &__picture {
-      height: to.rem(255px);
-      padding-left: to.rem(15px);
-    }
+  &__swiper-swiper {
+  }
+
+  &__slide {
+  }
+
+  &__slide-wrapper {
+    position: relative;
+    padding-top: to.rem(134px);
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__pagination {
+    text-align: left;
+    bottom: to.rem(94px);
+  }
+  &__pagination.swiper-pagination-horizontal {
+    bottom: to.rem(94px);
+  }
+  &__pagination-item {
+    height: to.rem(15px);
+    width: to.rem(15px);
+    background-color: $white;
+    opacity: 0.1744;
+  }
+
+  &__pagination-item.swiper-pagination-bullet:nth-child(1) {
+    margin-left: 1px;
+  }
+
+  &__pagination-item.swiper-pagination-bullet {
+    margin-right: 20px !important;
+  }
+
+  &__pagination-item.swiper-pagination-bullet-active {
+    opacity: 1;
   }
 }

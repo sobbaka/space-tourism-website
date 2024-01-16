@@ -2,27 +2,28 @@
 import Swiper from 'swiper/bundle';
 
 // import styles bundle
-import 'swiper/css/bundle';
-import '../styles/crewSwiper.scss';
+
+// import '../styles/crewTwo.scss';
 
 const slider = document.querySelector('.crew-swiper__wrapper')
 let crew = []
 
 function addContent(data) {
+
+  const heading = document.querySelector('.crew__title-main')
+  const headingBottom = heading.getBoundingClientRect().bottom
+  const slideHeight = (window.innerHeight - headingBottom - 1) + 'px'
+
   const html = `
-<div class="swiper-slide crew-swiper__slide">
-  <div class="crew-swiper__slide-wrapper">
-    <div class="crew-swiper__content">
-      <h3 class="crew-swiper__subtitle">${data.role}</h3>
-      <h2 class="crew-swiper__title">${data.name}</h2>
-      <p class="destination__text crew__text">
+<div class="swiper-slide crew__slide">
+<div class="crew__slide-wrapper" style="min-height: ${slideHeight}">
+      <h2 class="crew__title"><span class="crew__subtitle">${data.role}</span><br>${data.name}</h2>
+      <p class="crew__description">
       ${data.bio}
       </p>
-    </div>
-    <div class="crew-swiper__picture">
-      <img src="${data.images.webp}" alt="${data.name}" class="crew-swiper__image">
-    </div>
-  </div>
+
+      <img src="${data.images.webp}" alt="${data.name}" class="crew-swiper__image crew__image">
+      </div>
 </div>
     `
   return html
@@ -50,16 +51,17 @@ window.addEventListener("DOMContentLoaded", async (event) => {
     slider.insertAdjacentHTML("beforeend", node)
   })
 
+
+
   const swiper = new Swiper(".crew-swiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="crew-swiper__pagination-item ' + className + ' ">' + "</span>";
+        return '<span class="crew__pagination-item ' + className + ' ">' + "</span>";
       },
     },
   });
-
 });
 
 
