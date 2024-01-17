@@ -41,4 +41,12 @@ window.addEventListener("DOMContentLoaded", async (event) => {
     const node = addContent(member)
     slider.insertAdjacentHTML("beforeend", node)
   })
+
+  if (500 < window.screen.width && window.screen.width < 760) {
+    const image = document.querySelector('.tech__picture')
+    const imageBottom = image.getBoundingClientRect().bottom
+    const pagination = document.querySelector('.tech__pagination')
+    console.log(pagination)
+    pagination.style.top = (imageBottom + 50) + 'px'
+  }
 });

@@ -15,6 +15,10 @@
 
   &__title-main {
     padding-top: to.rem(76px);
+    letter-spacing: to.rem(4.725px);
+  }
+  &__number {
+    padding-right: to.rem(10px);
   }
   &__columns {
     padding-left: to.rem(160px);
@@ -81,6 +85,10 @@
     }
     &__title-main {
       padding: to.rem(40px 39px);
+      letter-spacing: to.rem(3.5px);
+    }
+    &__number {
+      padding-right: to.rem(5px);
     }
     &__wrapper {
       padding-left: 0;
@@ -111,7 +119,9 @@
     }
 
     &__subtitle {
-      // text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      letter-spacing: 2.7px;
     }
 
     &__text {
@@ -157,7 +167,8 @@
     background-image: url("../images/technology/background-technology-mobile.jpg");
 
     &__columns {
-      gap: to.rem(100px);
+      gap: to.rem(81px);
+      align-items: center;
     }
     &__title-main {
       font-size: to.rem(16px);
@@ -168,10 +179,17 @@
 
     &__title {
       font-size: to.rem(24px);
+      padding: to.rem(9px 0 16px);
     }
 
     &__subtitle {
       font-size: to.rem(14px);
+    }
+
+    &__description {
+      max-width: to.rem(327px);
+      font-size: to.rem(15px);
+      line-height: to.rem(25px);
     }
   }
 
@@ -186,7 +204,8 @@
 }
 
 .tech__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: 248px;
+  top: 247px;
+  left: -3px;
 
   @media (max-width: to.rem(980px)) {
     display: flex;
@@ -197,11 +216,8 @@
     gap: to.rem(8px);
   }
 
-  @media (max-width: to.rem(760px)) {
-    top: to.rem(calc(466px - 100vh * 0.1));
-  }
   @media (max-width: to.rem(500px)) {
-    top: to.rem(334px);
+    top: to.rem(277px);
   }
 }
 
@@ -213,7 +229,7 @@
   height: to.rem(80px);
   border: 1px solid $white;
   font-family: $Bellefair;
-  font-size: 23px;
+  font-size: 32px;
   margin-bottom: to.rem(32px) !important;
 }
 
