@@ -1,4 +1,6 @@
 .crew {
+  background-image: url("../images/destination/background-destination-desktop.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -10,13 +12,14 @@
   }
 
   &__wrapper-inner {
+    padding-top: to.rem(76px);
     display: flex;
     flex-direction: column;
-    padding-top: to.rem(76px);
     height: 100%;
   }
 
-  &__title-main {
+  &__number {
+    padding-right: to.rem(11px);
   }
 
   &__title {
@@ -38,24 +41,22 @@
     padding-top: to.rem(26px);
   }
 
-  &__swiper {
-  }
-
-  &__swiper-swiper {
-  }
-
-  &__slide {
-  }
-
   &__slide-wrapper {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-wrapper {
     padding-top: to.rem(134px);
   }
-
   &__image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__picture {
+    max-height: to.rem(654px);
   }
   &__pagination {
     text-align: left;
@@ -72,38 +73,50 @@
   }
 
   &__pagination-item.swiper-pagination-bullet:nth-child(1) {
-    margin-left: 1px;
+    margin-left: to.rem(1px);
   }
 
   &__pagination-item.swiper-pagination-bullet {
-    margin-right: 20px !important;
+    margin-right: to.rem(20px) !important;
   }
 
   &__pagination-item.swiper-pagination-bullet-active {
     opacity: 1;
   }
 
-  @media (min-width: 960px) and (max-height: 800px) {
+  @media (min-width: to.rem(960px)) and (max-height: to.rem(800px)) {
     &__pagination.swiper-pagination-horizontal {
       bottom: to.rem(15px);
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: to.rem(1110px)) {
+    &__wrapper-inner {
+      padding: to.rem(0 39px);
+    }
+  }
+
+  @media (max-width: to.rem(1000px)) {
     &__wrapper-inner {
       padding-top: to.rem(40px);
     }
+    &__title-main {
+      letter-spacing: to.rem(3.375px);
+      font-size: to.rem(20px);
+    }
+    &__number {
+      padding-right: to.rem(7px);
+    }
     &__slide-wrapper {
-      padding-top: to.rem(64px);
+      padding-top: to.rem(46px);
     }
     &__slide-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
-      // gap: to.rem(40px);
     }
-    &__title-main {
-      font-size: to.rem(20px);
+    &__content-wrapper {
+      padding-top: 0;
     }
     &__title {
       font-size: to.rem(40px);
@@ -111,27 +124,86 @@
     }
     &__subtitle {
       font-size: to.rem(24px);
+      padding-bottom: to.rem(8px);
     }
     &__description {
       width: 100%;
-      max-width: to.rem(592px);
+      max-width: to.rem(520px);
       text-align: center;
       min-height: to.rem(200px);
       font-size: to.rem(16px);
       line-height: to.rem(28px);
+      padding-top: to.rem(16px);
     }
-    &__image {
-      position: relative;
+    &__picture {
       max-height: to.rem(532px);
     }
     &__pagination.swiper-pagination-horizontal {
-      top: to.rem(310px);
+      top: to.rem(276px);
       text-align: center;
-      height: 7px;
+      height: to.rem(7px);
     }
     &__pagination-item {
       height: to.rem(10px);
       width: to.rem(10px);
+    }
+    &__pagination-item.swiper-pagination-bullet:nth-child(1) {
+      margin-left: 0px;
+    }
+    &__pagination-item.swiper-pagination-bullet {
+      margin: 0 8px !important;
+    }
+  }
+
+  @media (max-width: to.rem(920px)) {
+    background-image: url("../images/destination/background-destination-tablet.jpg");
+    background-size: cover;
+    &__wrapper-inner {
+      padding: to.rem(40px 0 0);
+    }
+  }
+
+  @media (max-width: to.rem(585px)) {
+    background-image: url("../images/destination/background-destination-mobile.jpg");
+    background-size: cover;
+    &__wrapper-inner {
+      padding-top: to.rem(21px);
+    }
+    &__title-main {
+      text-align: center;
+      font-size: to.rem(16px);
+      letter-spacing: to.rem(2.7px);
+    }
+    &__slide-wrapper {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-top: to.rem(32px);
+      gap: to.rem(68px);
+    }
+    &__subtitle {
+      font-size: to.rem(16px);
+    }
+    &__title {
+      font-size: to.rem(24px);
+    }
+    &__description {
+      font-size: to.rem(15px);
+      line-height: to.rem(25px);
+    }
+    &__image {
+      width: 100%;
+      max-height: to.rem(223px);
+      border-bottom: 1px solid #979797;
+    }
+    &__picture {
+      max-height: to.rem(223px);
+      object-fit: contain;
+    }
+
+    &__pagination.swiper-pagination-horizontal {
+      top: to.rem(281px);
+      text-align: center;
+      height: to.rem(7px);
     }
   }
 }

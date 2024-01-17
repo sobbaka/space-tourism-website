@@ -12,20 +12,22 @@ function addContent(data) {
 
   const heading = document.querySelector('.crew__title-main')
   const headingBottom = heading.getBoundingClientRect().bottom
-  const slideHeight = (window.innerHeight - headingBottom - 1) + 'px'
+  const slideHeight = (window.innerHeight - headingBottom) + 'px'
 
   const html = `
-<div class="swiper-slide crew__slide">
-<div class="crew__slide-wrapper" style="min-height: ${slideHeight}">
-<div class="crew__content-wrapper">
-      <h2 class="crew__title"><span class="crew__subtitle">${data.role}</span><br>${data.name}</h2>
-      <p class="crew__description">
-      ${data.bio}
-      </p>
+    <div class="swiper-slide crew__slide">
+      <div class="crew__slide-wrapper" style="min-height: ${slideHeight}">
+        <div class="crew__content-wrapper">
+          <h2 class="crew__title"><span class="crew__subtitle">${data.role}</span><br>${data.name}</h2>
+          <p class="crew__description">
+          ${data.bio}
+          </p>
+        </div>
+        <div class="crew__image">
+          <img src="${data.images.webp}" alt="${data.name}" class="crew__picture">
+        </div>
       </div>
-      <img src="${data.images.webp}" alt="${data.name}" class="crew-swiper__image crew__image">
-      </div>
-</div>
+    </div>
     `
   return html
 }
@@ -54,7 +56,7 @@ window.addEventListener("DOMContentLoaded", async (event) => {
 
 
 
-  const swiper = new Swiper(".crew-swiper", {
+  const swiper = new Swiper(".crew__swiper-swiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
